@@ -1,0 +1,21 @@
+name: That 70s Studio
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "CNAME"]
+timezone: Europe/London
+url: http://www.that70sstudio.com
+
+gems:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
