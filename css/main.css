@@ -4,7 +4,39 @@
 /*
 /*****************************************************************************/
 
+@font-face {
+	font-family: "Cooper Black";
+	src: url(/fonts/CooperBlack.ttf);
+}
 
+.cooper-black
+{
+	font-family: "Cooper Black";
+}
+
+.cooper-black-small
+{
+	font-size: 16px;
+	color: #d3d3d3;
+}
+
+.cooper-black-medium
+{
+	font-size: 32px;
+	color: #d3d3d3;
+}
+
+.cooper-black-big
+{
+	font-size: 64px;
+	color: #d3d3d3;
+}
+
+.cooper-black-xbig
+{
+	font-size: 96px;
+	color: #d3d3d3;
+}
 
 /*****************************************************************************/
 /*
@@ -12,4 +44,12 @@
 /*
 /*****************************************************************************/
 
+body
+{
+	background-color: black;
+}
 
+#home
+{
+	padding: 200px 0;
+}

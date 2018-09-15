@@ -41,6 +41,17 @@
     <script src="/js/bootstrap.min.js"></script>
     <!-- Smooth Scroll JS -->
     <script src="/js/smoothscroll.js"></script>
+    <!-- Arctext JS -->
+    <script src="/js/jquery.arctext.js"></script>
+
+    {% if page.title == "Home" %}
+    <script>
+        $(function() {
+            $('#title').arctext({radius: 1000});
+            $('#subtitle').arctext({radius: 1000, dir: -1});
+        });
+    </script>
+    {% endif %}
 
     </body>
 </html>
