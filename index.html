@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div id="home">
+<div id="home" class="section">
 
     <div class="container text-center">
         <div class="row">
@@ -23,9 +23,198 @@ title: Home
         </div>
         <div class="row">
             <div class="col-xs-6 col-xs-offset-3">
-                <h2 id="subtitle" class="cooper-black cooper-black-big">Coming Soon</h2>
+                <h2 id="subtitle" class="cooper-black cooper-black-big">Recording Studio</h2>
             </div>
         </div>
     </div>
 
+</div>
+
+<div id="about" class="section">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1 class="cooper-black cooper-black-big">About</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="cooper-black cooper-black-small">
+                    {% capture about %}{% include about.markdown %}{% endcapture %}
+                    {{ about | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="equipment" class="section">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1 class="cooper-black cooper-black-big">Equipment</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h5 class="cooper-black-invert cooper-black-medium">Microphones</h5>
+                        <ul class="cooper-black-invert cooper-black-small text-left">
+                        {% for microphone in site.data.equipment.microphones %}
+                            <li>{{ microphone }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h5 class="cooper-black-invert cooper-black-medium">Instruments</h5>
+                        <ul class="cooper-black-invert cooper-black-small text-left">
+                        {% for instrument in site.data.equipment.instruments %}
+                            <li>{{ instrument }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h5 class="cooper-black-invert cooper-black-medium">Outboard</h5>
+                        <ul class="cooper-black-invert cooper-black-small text-left">
+                        {% for gear in site.data.equipment.outboard %}
+                            <li>{{ gear }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="gallery" class="section">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1 class="cooper-black cooper-black-big">Gallery</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-1">
+                <a href="#lightbox1" data-toggle="lightbox" class="thumbnail">
+                    <img src="img/Studio_NW.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-5">
+                <a href="#lightbox2" data-toggle="lightbox" class="thumbnail">
+                    <img src="img/Studio_NE.jpg" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-1">
+                <a href="#lightbox3" data-toggle="lightbox" class="thumbnail">
+                    <img src="img/Studio_SW.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-5">
+                <a href="#lightbox4" data-toggle="lightbox" class="thumbnail">
+                    <img src="img/Studio_SE.jpg" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="contact" class="section">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1 class="cooper-black cooper-black-big">Contact</h1>
+            </div>
+        </div>
+        <br>
+        <ul class="list-inline text-center">
+            <li>
+                <a href="https://www.facebook.com/that70sstudio" class="no-link" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/70sstudio" class="no-link" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/70sstudio" class="no-link" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:mail@that70sstudio.com" class="no-link">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <br>
+        <div class="row">
+            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJffsqj4cdkgR0Bug2DMxXO4&key=AIzaSyAGLJdOTdyhVfv3nbMx0Khwc_iatGY_paY&zoom=15" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+
+<div id="lightbox1" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-dialog">
+        <div class="lightbox-content">
+            <img src="img/Studio_NW.jpg" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div id="lightbox2" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-dialog">
+        <div class="lightbox-content">
+            <img src="img/Studio_NE.jpg" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div id="lightbox3" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-dialog">
+        <div class="lightbox-content">
+            <img src="img/Studio_SW.jpg" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div id="lightbox4" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-dialog">
+        <div class="lightbox-content">
+            <img src="img/Studio_SE.jpg" class="img-responsive">
+        </div>
+    </div>
 </div>
