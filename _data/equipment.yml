@@ -14,8 +14,10 @@ microphones:
 instruments:
 
   - Ludwig Super Classic Drum Kit (Vintage)
-  - Hammond L102 Organ (Vintage)
+  - Ludwig Supraphonic Snare Drum (Vintage)
+  - Ludwig Acrolite Snare Drum (Vintage)
   - Schiedmayer Upright Piano (Vintage)
+  - Hammond L102 Organ (Vintage)
   - Martin D-28
   - Gibson J-45 Standard
   - Gibson SG Standard
@@ -31,13 +33,15 @@ instruments:
 
 outboard:
 
+  - Revox PR99 MKIII (Vintage)
   - Universal Audio Apollo 8p
   - Universal Audio Apollo Twin
   - Softube Console 1
+  - Avid Pro Tools 12
+  - Apple Logic Pro X
   - Genelec 1030A (x2)
   - Beyerdynamic DT100 (x4)
-  - Avid Pro Tools 12
-  - Revox PR99 MKIII Tape Machine
+  - Beyerdynamic DT770 Pro
   - Radial JDI DI Box
   - Radial JCR Reamp Box
   - Various UAD, Waves Plugins
