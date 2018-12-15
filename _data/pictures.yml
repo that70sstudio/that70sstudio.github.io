@@ -18,3 +18,22 @@ outboard:
   - Outboard_01
   - Outboard_02
   - Outboard_03
+
+grid:
+
+  - name: amp
+    size: 5
+  - name: board
+    size: 4
+  - name: cymbal
+    size: 3
+  - name: drum
+    size: 5
+  - name: main_studio
+    size: 6
+  - name: pedal
+    size: 4
+  - name: piano
+    size: 5
+  - name: tape_machine
+    size: 3

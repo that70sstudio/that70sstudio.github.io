@@ -78,6 +78,11 @@ body
 	padding-top: 50px;
 }
 
+.grid-item
+{
+	margin-bottom: 30px;
+}
+
 .map
 {
     -webkit-filter: grayscale(100%);

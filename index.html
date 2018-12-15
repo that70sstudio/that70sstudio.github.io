@@ -111,29 +111,18 @@ title: Home
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-                <a href="#lightbox1" data-toggle="lightbox" class="thumbnail">
-                    <img src="img/Studio_NW.JPG" class="img-responsive">
-                </a>
+        <div class="grid">
+
+            <!-- Placeholder -->
+            <div class="grid-sizer col-sm-1"></div>
+
+            {% for image in site.data.pictures.grid %}
+            <div class="grid-item col-sm-{{ image.size }}">
+                <div class="grid-item-content">
+                    <img src="img/{{ image.name }}.jpg" class="img-responsive center-block">
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-5">
-                <a href="#lightbox2" data-toggle="lightbox" class="thumbnail">
-                    <img src="img/Studio_NE.JPG" class="img-responsive">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-                <a href="#lightbox3" data-toggle="lightbox" class="thumbnail">
-                    <img src="img/Studio_SW.JPG" class="img-responsive">
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-                <a href="#lightbox4" data-toggle="lightbox" class="thumbnail">
-                    <img src="img/Studio_SE.JPG" class="img-responsive">
-                </a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
@@ -190,33 +179,4 @@ title: Home
         </div>
     </div>
 
-</div>
-
-<div id="lightbox1" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="lightbox-dialog">
-        <div class="lightbox-content">
-            <img src="img/Studio_NW.JPG" class="img-responsive">
-        </div>
-    </div>
-</div>
-<div id="lightbox2" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="lightbox-dialog">
-        <div class="lightbox-content">
-            <img src="img/Studio_NE.JPG" class="img-responsive">
-        </div>
-    </div>
-</div>
-<div id="lightbox3" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="lightbox-dialog">
-        <div class="lightbox-content">
-            <img src="img/Studio_SW.JPG" class="img-responsive">
-        </div>
-    </div>
-</div>
-<div id="lightbox4" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="lightbox-dialog">
-        <div class="lightbox-content">
-            <img src="img/Studio_SE.JPG" class="img-responsive">
-        </div>
-    </div>
 </div>
