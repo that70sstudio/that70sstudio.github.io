@@ -58,29 +58,6 @@
             $('#subtitle').arctext({radius: 1000, fitText: true, dir: -1});
         });
     </script>
-
-    <script>
-        var pickOne=function(e){
-            var n=e[Math.floor(Math.random()*e.length)];return n;
-        };
-        function generatePictures(){
-            var m=["{{ site.data.pictures.microphones | join: '","' }}"],
-            h=pickOne(m),
-            l=["{{ site.data.pictures.instruments | join: '","' }}"],
-            c=pickOne(l),
-            d=["{{ site.data.pictures.outboard | join: '","' }}"],
-            g=pickOne(d),
-            a="img/"+h+".JPG",
-            r="img/"+c+".JPG",
-            j="img/"+g+".JPG";
-            document.getElementById("microphonePicture").src=a;
-            document.getElementById("instrumentPicture").src=r;
-            document.getElementById("outboardPicture").src=j;
-        };
-        $(function() {
-            generatePictures();
-        });
-    </script>
     {% endif %}
 
     </body>
