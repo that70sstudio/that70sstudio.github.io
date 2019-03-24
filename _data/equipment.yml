@@ -18,6 +18,7 @@ instruments:
   - Ludwig Super Classic Drum Kit (Vintage)
   - Ludwig Supraphonic Snare Drum (Vintage)
   - Ludwig Acrolite Snare Drum (Vintage)
+  - Ludwig Jazz Festival Snare Drum (Vintage)
   - Schiedmayer Upright Piano (Vintage)
   - Hammond L102 Organ (Vintage)
   - Martin D-28
@@ -30,6 +31,7 @@ instruments:
   - Danelectro 12-String
   - Gretsch Lap Steel
   - Gretsch Mandolin
+  - Various Zildjian Cymbals
   - Various Guitar Pedals
   - Various Hand Percussions
 
@@ -48,4 +50,4 @@ outboard:
   - Beyerdynamic DT770 Pro
   - Radial JDI DI Box
   - Radial JCR Reamp Box
-  - Various UAD, Waves Plugins
+  - Various UAD, Waves, Soundtoys Plugins
