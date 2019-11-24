@@ -1,6 +1,8 @@
 microphones:
 
   - U87 (Clone x2)
+  - U67 (Clone)
+  - U47 FET (Clone)
   - AKG C414 XLII
   - AKG D12 (Vintage)
   - Audio-Technica AT4040
@@ -38,6 +40,7 @@ instruments:
 
 outboard:
 
+  - 1073 (Clone)
   - LA-2A (Clone)
   - 1176 Rev D (Clone)
   - Revox PR99 MKIII (Vintage)
